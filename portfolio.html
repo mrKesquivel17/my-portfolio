@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="https://drive.google.com/uc?id=1LDsQqN_TP7p7zXoNWCDso1goYmFjVVVk" type="image/x-icon" />
+  <link rel="stylesheet" href="portfolio css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lp3o0f/8qooWU8p1uCzJwGf1/9zGv3C5vLx/M8nH6dKvO5CcrhzmJe5Wz+DTv7P" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="logo">
+        <img src="https://drive.google.com/uc?id=1LDsQqN_TP7p7zXoNWCDso1goYmFjVVVk" height="50px" width="50px" alt="Logo">
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="profile">
+      <img src="https://drive.google.com/uc?id=1fDvlr-jFMOH_Yum8jiePZ6plrYLPqSFx" alt="Profile Picture">
+      <h2>Mark Esquivel</h2>
+      <p>Frontend Developer</p>
+      <ul class="social-icons">
+        <li><a href="https://web.facebook.com/profile.php?id=100089057334785"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/17Mr_K?t=2YtVfU51CyCOXeLSqiBmTA&s=09"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCKNNcz4GWE1zDJti2U64Z0Q"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://instagram.com/mr.k_nga_aba?igshid=ZGUzMzM3NWJiOQ=="><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://discord.gg/your-discord-invite"><i class="fab fa-discord"></i></a></li>
+      </ul>
+      
+    </div>
+    <div class="overlay">
+      <h1>My Portfolio</h1>
+      <p>mr.K </p>
+      <a href="#portfolio" class="btn">View Portfolio</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Add a compelling description about yourself and your expertise.</p>
+    </div>
+    <div class="kodfun-galeri" id="Galeri">
+        <div style="background-image: url(https://drive.google.com/uc?export=view&id=1PV-ajSFZkKzYi89ujZ7rpCZsCQeG-ijR);"></div>
+        <div style="background-image: url(https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v);"></div>
+       <div style="background-image: url(https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG);"></div>
+       <div style="background-image: url(https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00);"></div>
+       <div style="background-image: url(https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v);"></div>
+     </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-items">
+        <div id="image-container" class="item">
+          <img id="current-image" src="https://drive.google.com/uc?export=view&id=1PV-ajSFZkKzYi89ujZ7rpCZsCQeG-ijR" alt="project 1">
+          <h3>Project</h3>
+          <p>Description of Project</p>
+        </div>
+        <div id="buttons-container">
+            <button id="next-button"><</button>
+          <button id="prev-button">></button>
+        </div>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v" alt="Image 1">
+              <div class="overlay"></div>
+              <div class="text">Image 1</div>
+              <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v')">
+                <img src="https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v" alt="Image 1">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG" alt="Image 2">
+              <div class="overlay"></div>
+              <div class="text">Image 2</div>
+              <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG')">
+                <img src="https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG" alt="Image 2">
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00" alt="Image 3">
+              <div class="overlay"></div>
+              <div class="text">Image 3</div>
+              <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00')">
+                <img src="https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00" alt="Image 3">
+              </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg" alt="Image 4">
+                <div class="overlay"></div>
+                <div class="text">Image 4</div>
+                <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg')">
+                  <img src="https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg" alt="Image 4">
+                </div>
+              </div>
+
+    
+      <div class="image-modal" id="modal">
+        <span class="close-button" onclick="hideModal()">&times;</span>
+        <img src="" alt="Modal Image" id="modalImage" onload="showModalImage()">
+      </div>
+    
+        </div> 
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to get in touch with me.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+  </footer>
+  <script>
+const anchorLinks = [
+  ...document.querySelectorAll('a[href^="#home"]'),
+  ...document.querySelectorAll('a[href^="#about"]'),
+  ...document.querySelectorAll('a[href^="#portfolio"]'),
+  ...document.querySelectorAll('a[href^="#contact"]')
+];
+
+anchorLinks.forEach((link) => {
+  link.addEventListener('click', smoothScroll);
+});
+
+function smoothScroll(e) {
+  e.preventDefault();
+
+  const targetId = this.getAttribute('href');
+  const targetPosition = document.querySelector(targetId).offsetTop;
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  const duration = 1000; 
+
+  let start = null;
+
+  function animation(currentTime) {
+    if (start === null) start = currentTime;
+    const timeElapsed = currentTime - start;
+    const run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+
+    
+    const images = [
+    'https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v',
+    'https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG',
+    'https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00',
+    'https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg',
+    'https://drive.google.com/uc?export=view&id=1PV-ajSFZkKzYi89ujZ7rpCZsCQeG-ijR',
+  ];
+  
+  let currentIndex = 0;
+  const imageElement = document.getElementById('current-image');
+  const prevButton = document.getElementById('prev-button');
+  const nextButton = document.getElementById('next-button');
+  
+  function updateImageWithTransition() {
+    imageElement.style.opacity = 0;
+  
+    setTimeout(function() {
+      updateImage();
+      imageElement.style.opacity = 1;
+    }, 300);
+  }
+  
+  function updateImage() {
+    imageElement.src = images[currentIndex];
+  }
+  
+  prevButton.addEventListener('click', () => {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1;
+    }
+    updateImageWithTransition();
+  });
+  
+  nextButton.addEventListener('click', () => {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    updateImageWithTransition();
+  });
+  
+  updateImage();
+
+  function showModal(imageSrc) {
+      const modal = document.getElementById('modal');
+      const modalImage = document.getElementById('modalImage');
+
+      modalImage.src = imageSrc;
+      modal.style.display = 'flex';
+    }
+
+    function hideModal() {
+      const modal = document.getElementById('modal');
+      modal.style.display = 'none';
+    }
+
+    function showModalImage() {
+      const modalImage = document.getElementById('modalImage');
+      modalImage.style.opacity = 1;
+    }
+  </script>
+</body>
+
+</html>
