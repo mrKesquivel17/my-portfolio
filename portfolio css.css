@@ -25,9 +25,13 @@ body {
 }
 
 h1, h1 {
-  font-size: 40px;
+  font-size: 400%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-variant-caps: small-caps;
+  background: -webkit-linear-gradient(#b508fa, #0063f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 2px rgb(245, 168, 3));
 }
 
 @media (max-width: 768px) {
