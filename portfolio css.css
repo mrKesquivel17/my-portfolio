@@ -57,7 +57,7 @@ h1, h1 {
   font-variant-caps: small-caps;
   margin-bottom: 1px;
   color: #fff;
-  filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 1));
+  box-shadow: 0 0 5px #ffe601, 0 0 20px #d505ff;
 }
 
 .profile p {
