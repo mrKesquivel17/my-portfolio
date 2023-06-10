@@ -57,10 +57,12 @@ h1, h1 {
 
 .profile h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 24px;
+  font-size: 200%;
   font-variant-caps: small-caps;
   margin-bottom: 1px;
-  color: #fff;
+  background: -webkit-linear-gradient(#fa4008, #c2f800, #fc150d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 1));
 }
 
@@ -69,6 +71,27 @@ h1, h1 {
   margin-bottom: 10px;
   color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+  .profile h2 {
+    font-size: 150%;
+  }
+
+  .profile p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile h2 {
+    font-size: 120%;
+  }
+
+  .profile p {
+    font-size: 12px;
+  }
+}
+
 
 .social-icons {
   list-style: none;
@@ -112,7 +135,7 @@ h1, h1 {
 .social-icons a:hover {
   text-decoration: underline;
   color: #081fee;
-  filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 1));
+  filter: drop-shadow(6px 6px 1px rgb(252, 252, 252));
 }
 
 .container {
@@ -122,7 +145,7 @@ h1, h1 {
 }
 
 header {
-  background: rgba(0, 0, 0, 0.527);
+  background: -webkit-linear-gradient(#00000044, #f1c50042);
   padding: 5px;
   position: fixed;
   width: 100%;
@@ -130,7 +153,7 @@ header {
   z-index: 9999;
 }
 .logo{
-  padding-right: %;
+  padding-right: 5%;
 }
 
 nav {
@@ -165,14 +188,18 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(255, 0, 212);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-variant-caps: small-caps;
+  color: white;
   text-decoration: none;
   font-family: initial;
-  font-size: medium;
+  font-size: 150%;
+  position: relative;
 }
 
 nav a:hover {
-  color: rgb(255, 222, 35);
+  filter: drop-shadow(1px 1px 1px rgb(253, 0, 0));
+  text-decoration: underline;
 }
 
 #home {
@@ -200,7 +227,7 @@ nav a:hover {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 4px;
   background-color: #4d4dff;
   color: #fff;
   text-decoration: none;
