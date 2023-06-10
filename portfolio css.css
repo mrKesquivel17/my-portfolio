@@ -10,8 +10,9 @@ html, body, ul {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  background: rgb(2, 0, 36);
   background: linear-gradient(238deg, rgba(2, 0, 36, 1) 27%, rgba(244, 0, 255, 1) 100%);
+  background-attachment: fixed;
+  background-position: center top;
 }
 
 .profile {
@@ -258,24 +259,34 @@ nav a:hover {
 #about {
   height: 100vh;
   padding: 80px 0;
-  background-color: #00032cd7;
-  color: rgb(248, 11, 248);
+  font-variant-caps: small-caps;
+  margin: 2%;
 }
 
 #about h2 {
   font-size: 36px;
   margin-bottom: 40px;
   text-align: center;
+  background: -webkit-linear-gradient(#fa4008, #c2f800, #fc150d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 1));
 }
 
 #about p {
   font-size: 18px;
   text-align: center;
+  color: white;
 }
 
 #portfolio {
   height: 100vh;
   padding: 80px 0;
+  background: -webkit-linear-gradient(#fa4008, #c2f800, #fc150d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 1));
+  font-variant-caps: small-caps;
 }
 
 #portfolio h2 {
@@ -317,21 +328,28 @@ nav a:hover {
 
 #contact {
   height: 75vh;
-  background-color: #333;
-  color: #fff;
   padding: 80px 0;
 }
 
 #contact h2 {
   font-size: 36px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   text-align: center;
+  background: -webkit-linear-gradient(#fa4008, #c2f800, #fc150d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 1));
+  font-variant-caps: small-caps;
 }
 
 #contact p {
   font-size: 18px;
   margin-bottom: 40px;
   text-align: center;
+  background: -webkit-linear-gradient(#fa4008, #c2f800, #fc150d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(6px 6px 1px rgba(0, 0, 0, 1));
 }
 
 form input,
@@ -358,10 +376,11 @@ form .btn:hover {
 }
 
 footer {
-  background-color: #cd05ff;
+  background-color: #000000;
   color: #fff;
   padding: 20px;
   text-align: center;
+  font-variant-caps: small-caps;
 }
 
 .kodfun-galeri {
