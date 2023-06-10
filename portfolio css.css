@@ -22,7 +22,6 @@ body {
   text-align: center;
   padding: 10px;
   margin-left: 10%;
-  filter :drop-shadow (12px 12px 7px rgb(0, 0, 0, 0.7));
 }
 
 h1{
