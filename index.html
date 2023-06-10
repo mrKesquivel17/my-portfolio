@@ -7,13 +7,14 @@
   <title>My Portfolio</title>
   <link rel="shortcut icon" href="https://drive.google.com/uc?id=1LDsQqN_TP7p7zXoNWCDso1goYmFjVVVk" type="image/x-icon" />
   <link rel="stylesheet" href="portfolio css.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lp3o0f/8qooWU8p1uCzJwGf1/9zGv3C5vLx/M8nH6dKvO5CcrhzmJe5Wz+DTv7P" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-  <header>
+  <header data-aos="fade-left">
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -28,7 +29,7 @@
   </header>
 
   <section id="home">
-    <div class="profile">
+    <div class="profile" data-aos="fade-left">
       <img src="https://drive.google.com/uc?id=1fDvlr-jFMOH_Yum8jiePZ6plrYLPqSFx" alt="Profile Picture">
       <h2>Mark Esquivel</h2>
       <p>Frontend Developer</p>
@@ -41,7 +42,7 @@
       </ul>
       
     </div>
-    <div class="overlay">
+    <div class="overpay" data-aos="fade-right>
       <h1>My Portfolio</h1>
       <p>mr.K </p>
       <a href="#portfolio" class="btn">View Portfolio</a>
@@ -49,11 +50,11 @@
   </section>
 
   <section id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-left">
       <h2>About Me</h2>
       <p>Add a compelling description about yourself and your expertise.</p>
     </div>
-    <div class="kodfun-galeri" id="Galeri">
+    <div class="kodfun-galeri" id="Galeri" data-aos="fade-right>
         <div style="background-image: url(https://drive.google.com/uc?export=view&id=1PV-ajSFZkKzYi89ujZ7rpCZsCQeG-ijR);"></div>
         <div style="background-image: url(https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v);"></div>
        <div style="background-image: url(https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG);"></div>
@@ -63,7 +64,7 @@
   </section>
 
   <section id="portfolio">
-    <div class="container">
+    <div class="container" data-aos="fade-left">
       <h2>Portfolio</h2>
       <div class="portfolio-items">
         <div id="image-container" class="item">
@@ -75,7 +76,7 @@
             <button id="next-button"><</button>
           <button id="prev-button">></button>
         </div>
-          <div class="gallery">
+          <div class="gallery" data-aos="fade-right>
             <div class="gallery-item">
               <img src="https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v" alt="Image 1">
               <div class="overlay"></div>
@@ -84,7 +85,7 @@
                 <img src="https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v" alt="Image 1">
               </div>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" data-aos="fade-left">
               <img src="https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG" alt="Image 2">
               <div class="overlay"></div>
               <div class="text">Image 2</div>
@@ -92,7 +93,7 @@
                 <img src="https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG" alt="Image 2">
               </div>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" data-aos="fade-right>
               <img src="https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00" alt="Image 3">
               <div class="overlay"></div>
               <div class="text">Image 3</div>
@@ -100,7 +101,7 @@
                 <img src="https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00" alt="Image 3">
               </div>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-item" data-aos="fade-left">
                 <img src="https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg" alt="Image 4">
                 <div class="overlay"></div>
                 <div class="text">Image 4</div>
