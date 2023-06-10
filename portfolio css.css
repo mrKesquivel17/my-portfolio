@@ -256,6 +256,7 @@ nav a:hover {
 
 
 #about {
+  height: 100vh;
   padding: 80px 0;
   background-color: #00032cd7;
   color: rgb(248, 11, 248);
@@ -273,6 +274,7 @@ nav a:hover {
 }
 
 #portfolio {
+  height: 100vh;
   padding: 80px 0;
 }
 
