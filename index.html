@@ -66,59 +66,33 @@
   <section id="portfolio">
     <div class="container">
       <h2>Portfolio</h2>
-      <div class="portfolio-items">
-        <div id="image-container" class="item">
-          <img id="current-image" src="https://drive.google.com/uc?export=view&id=1PV-ajSFZkKzYi89ujZ7rpCZsCQeG-ijR" alt="project 1">
-          <h3>Project</h3>
-          <p>Description of Project</p>
+      <div class="picture-container">
+        <div class="the-main-img">
+          <img src="img1.jpg" id="main-img" alt="">
+          <div class="img-description">wala pa</div>
         </div>
-        <div id="buttons-container">
-            <button id="next-button"><</button>
-          <button id="prev-button">></button>
+        <div class="image-slides">
+          <img src="img1.jpg" class="active" data-description="Description 1">
+          <div class="img-description">wala pa</div>
+          <img src="img2.jpg" data-description="Description 2">
+          <div class="img-description">Description 2</div>
+          <img src="img3.jpg" data-description="Description 3">
+          <div class="img-description">Description 3</div>
+          <img src="img4.jpg" data-description="Description 4">
+          <div class="img-description">Description 4</div>
+          <img src="img5.jpg" data-description="Description 5">
+          <div class="img-description">Description 5</div>
+          <img src="img6.jpg" data-description="Description 6">
+          <div class="img-description">Description 6</div>
+          <img src="img7.jpg" data-description="Description 7">
+          <div class="img-description">Description 7</div>
+          <img src="img8.jpg" data-description="Description 8">
+          <div class="img-description">Description 8</div>
         </div>
-          <div class="gallery">
-            <div class="gallery-item">
-              <img src="https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v" alt="Image 1">
-              <div class="overlay"></div>
-              <div class="text">Image 1</div>
-              <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v')">
-                <img src="https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v" alt="Image 1">
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG" alt="Image 2">
-              <div class="overlay"></div>
-              <div class="text">Image 2</div>
-              <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG')">
-                <img src="https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG" alt="Image 2">
-              </div>
-            </div>
-            <div class="gallery-item">
-              <img src="https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00" alt="Image 3">
-              <div class="overlay"></div>
-              <div class="text">Image 3</div>
-              <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00')">
-                <img src="https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00" alt="Image 3">
-              </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg" alt="Image 4">
-                <div class="overlay"></div>
-                <div class="text">Image 4</div>
-                <div class="image-container" onclick="showModal('https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg')">
-                  <img src="https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg" alt="Image 4">
-                </div>
-              </div>
-
-    
-      <div class="image-modal" id="modal">
-        <span class="close-button" onclick="hideModal()">&times;</span>
-        <img src="" alt="Modal Image" id="modalImage" onload="showModalImage()">
       </div>
-    
-        </div> 
+    </div>
   </section>
-
+  
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
@@ -179,101 +153,58 @@ function smoothScroll(e) {
 }
 
 
-    
-    const images = [
-    'https://drive.google.com/uc?export=view&id=1POLcPsMpbinp7pL4Ca6Lxqpi5Lq8mU5v',
-    'https://drive.google.com/uc?export=view&id=1PO7QgCAKP9oH2EFK1h_EHz1OPNk5mEiG',
-    'https://drive.google.com/uc?export=view&id=1PObEzS69BOvFMEZRhNVHhyAyZ-U1wA00',
-    'https://drive.google.com/uc?export=view&id=1PPFr3v7ETjtEQ6EcbsVpCBPCupvG-zLg',
-    'https://drive.google.com/uc?export=view&id=1PV-ajSFZkKzYi89ujZ7rpCZsCQeG-ijR',
-  ];
-  
-  let currentIndex = 0;
-  const imageElement = document.getElementById('current-image');
-  const prevButton = document.getElementById('prev-button');
-  const nextButton = document.getElementById('next-button');
-  
-  function updateImageWithTransition() {
-    imageElement.style.opacity = 0;
-  
-    setTimeout(function() {
-      updateImage();
-      imageElement.style.opacity = 1;
-    }, 300);
-  }
-  
-  function updateImage() {
-    imageElement.src = images[currentIndex];
-  }
-  
-  prevButton.addEventListener('click', () => {
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = images.length - 1;
-    }
-    updateImageWithTransition();
+  // galeri js  
+let allImgs = document.querySelectorAll(".image-slides img");
+let theMainImg = document.getElementById("main-img");
+let description = document.querySelector(".img-description");
+
+allImgs.forEach(function(img) {
+  img.addEventListener("click", (e) => {
+    allImgs.forEach(function(img) {
+      img.classList.remove("active");
+    });
+    theMainImg.src = e.target.src;
+    img.classList.add("active");
   });
+});
+
+theMainImg.addEventListener("mouseover", () => {
+  description.style.opacity = "1";
+});
+
+theMainImg.addEventListener("mouseout", () => {
+  description.style.opacity = "0";
+});
+
   
-  nextButton.addEventListener('click', () => {
-    currentIndex++;
-    if (currentIndex >= images.length) {
-      currentIndex = 0;
-    }
-    updateImageWithTransition();
-  });
-  
-  updateImage();
-
-  function showModal(imageSrc) {
-      const modal = document.getElementById('modal');
-      const modalImage = document.getElementById('modalImage');
-
-      modalImage.src = imageSrc;
-      modal.style.display = 'flex';
-    }
-
-    function hideModal() {
-      const modal = document.getElementById('modal');
-      modal.style.display = 'none';
-    }
-
-    function showModalImage() {
-      const modalImage = document.getElementById('modalImage');
-      modalImage.style.opacity = 1;
-    }
-
+// contact js
   document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the form from submitting by default
+    event.preventDefault(); 
 
-    // Get form values
+
     var name = document.getElementById("contact-form").elements.namedItem("name").value;
     var email = document.getElementById("contact-form").elements.namedItem("email").value;
     var message = document.getElementById("contact-form").elements.namedItem("message").value;
 
-    // Perform basic form validation
+ 
     if (name === "" || email === "" || message === "") {
       alert("Please fill in all fields.");
       return;
     }
 
-    // Create an XMLHttpRequest object
     var xhr = new XMLHttpRequest();
 
-    // Configure the request
     xhr.open("POST", "contact.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-    // Prepare the data to be sent
     var data = "name=" + encodeURIComponent(name) + "&email=" + encodeURIComponent(email) + "&message=" + encodeURIComponent(message);
 
-    // Send the request
     xhr.send(data);
 
-    // Handle the response
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4 && xhr.status === 200) {
         alert("Thank you for your message! We will get back to you soon.");
-        document.getElementById("contact-form").reset(); // Reset the form after successful submission
+        document.getElementById("contact-form").reset(); 
       }
     };
   });
