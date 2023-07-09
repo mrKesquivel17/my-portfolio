@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>mr.k</title>
+    <link rel="shortcut icon" href="images\logo.png" type="x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="images\logo.png" alt="Logo">
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a class="current" href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="main">
+    <div class="profile">
+        <img src="images/profile.jpg" alt="profile">
+        <h1>MR.K</h1>
+        <h3>Font-end Developer</h3>
+            <ul class="social-icons">
+                <li><a href="https://web.facebook.com/profile.php?id=100089057334785"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/17Mr_K?t=2YtVfU51CyCOXeLSqiBmTA&s=09"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/mrKesquivel17"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://instagram.com/mr.k_nga_aba?igshid=ZGUzMzM3NWJiOQ=="><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://discord.gg/y9HmYvhG"><i class="fab fa-discord"></i></a></li>
+            </ul>     
+    </div>
+ </div>  
+<br>
+ <hr>
+
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <i class="bx bxl-codepen"></i>
+            <span>Practice Code</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+        <img src="images\logo.png" alt="me" class="user-img">
+        <div>
+            <p class="bold">MR.K</p>
+                <p>Developer</p>
+        </div>
+    </div>
+<ul>
+    <li>
+        <a href="dashboard.html">
+        <i class="bx bxs-grid-alt"></i>
+        <span class="nav-item">Dashboard</span>
+        </a>
+    <span class="tooltip">Dashboard</span>
+    </li>
+
+    <li>
+        <a href="services.html">
+        <i class="bx bx-body"></i>
+        <span class="nav-item">Services</span>
+        </a>
+    <span class="tooltip">Services</span>
+    </li>
+
+    <li>
+        <a href="projects.html">
+        <i class="bx bxs-food-menu"></i>
+        <span class="nav-item">Projects</span>
+        </a>
+    <span class="tooltip">Projects</span>
+    </li>
+
+    <li>
+        <a href="contact.html">
+        <i class="bx bxs-user"></i>
+        <span class="nav-item">Contact</span>
+        </a>
+    <span class="tooltip">Contact</span>
+    </li>
+
+    <li>
+        <a href="setting.html">
+        <i class="bx bx-cog"></i>
+        <span class="nav-item">Settings</span>
+        </a>
+    <span class="tooltip">Settings</span>
+    </li>
+</ul>
+</div>
+
+<div class="service">
+    <h1>SERVICES</h1>
+</div>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    });
+</script>
+</html>
